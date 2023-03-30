@@ -1,7 +1,9 @@
 <?php
 class Movie{
     public $title;
-    public $duration;
+    public int $duration;
+
+    public static $movieTypology = ["action", "fantasy", "motivational"];
 
     function __construct($_title, $_duration){
         $this->title = $_title;

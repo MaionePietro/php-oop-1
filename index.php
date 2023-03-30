@@ -1,7 +1,8 @@
 <?php
+require_once __DIR__ . "/models/Movie.php";
 
-
-
+$film1 = new Movie("titolo", "23");
+var_dump($film1)
 ?>
 
 <!DOCTYPE html>
