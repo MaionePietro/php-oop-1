@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . "/models/Movie.php";
 
-$film1 = new Movie("Star Wars", "23", "bla bla bla");
+$film1 = new Movie("Star Wars", "fantasy", "23");
 //$a = Movie::movieTypology[1];
 //var_dump($film1);
 //var_dump($film1->lenght());
@@ -20,9 +20,8 @@ $film1 = new Movie("Star Wars", "23", "bla bla bla");
 <body class="vh-100 d-flex justify-content-center align-items-center">
     <div class="container">
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
-                <!-- <p class="card-text"> <?php //echo $film1->concatena(); ?></p> -->
+                <p class="card-text"> <?php echo $film1->concatena(); ?></p>
             </div>
         </div>
     </div>
