@@ -2,21 +2,20 @@
 class Movie{
     public string $title;
     public int $duration;
-    public string $genere;
-    //public static $movieTypology = ["action", "fantasy", "motivational"];
+    public string $typology;
+    public static $movieTypologys = ["action", "fantasy", "motivational"];
 
-    function __construct($_title, $_genere, $_duration){
+    function __construct($_title, $_duration, $_typology){
         $this->title = $_title;
-        $this->genere = $_genere;
         $this->duration = $_duration;
+        $this->typology = $_typology;
     }
 
-    public function concatena(){
-        $text ="$this->title, $this->duration, $this->genere";
-        // $i = strlen($this->description);
-        // if( $i < 10 ){
-            // $text .= $this->$description;
-        // }
-        return $text;
+    public function getTitolo(){
+        return $this->title;
+    }
+
+    public function getInfo(){
+        return $this->duration . "<br>" . $this->typology;
     }
 }
